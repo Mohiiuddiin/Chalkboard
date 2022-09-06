@@ -1,0 +1,19 @@
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Threading.Tasks;
+//using ESCHOOL.Models;
+
+//namespace ESCHOOL.IServices
+//{
+//    public interface ITeachersServices
+//    {
+//        //Student Save(Student oStudent);
+//        List<Teachers> Gets();
+//        List<Teachers> Get(int classId);
+
+//        //List<vw_Bravo> GetAllResults();
+//        //List<vw_Bravo> GetResultsByExamId(int studentId);
+//        //List<vw_Bravo> GetResultByStudentId(int subjectId);
+//    }
+//}

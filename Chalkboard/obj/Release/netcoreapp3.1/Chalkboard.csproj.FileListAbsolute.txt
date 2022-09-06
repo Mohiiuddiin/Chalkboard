@@ -1,0 +1,471 @@
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\web.config
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\appsettings.Development.json
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\appsettings.json
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.exe
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.deps.json
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.runtimeconfig.json
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.runtimeconfig.dev.json
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.pdb
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.exe
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.exe.config
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.rsp
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.exe
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.exe.config
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.rsp
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CSharp.Core.targets
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Managed.Core.targets
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Win32.Primitives.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.AppContext.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Collections.Immutable.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Console.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.StackTrace.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Globalization.Calendars.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.Compression.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.Compression.ZipFile.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.FileSystem.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Net.Http.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Net.Sockets.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Reflection.Metadata.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Text.Encoding.CodePages.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.ValueTuple.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.ReaderWriter.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XmlDocument.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XPath.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XPath.XDocument.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.exe
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.exe.config
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.rsp
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\VBCSCompiler.exe
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\VBCSCompiler.exe.config
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Dapper.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.AssemblyReference.cache
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.GeneratedMSBuildEditorConfig.editorconfig
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.AssemblyInfoInputs.cache
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.AssemblyInfo.cs
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.CoreCompileInputs.cache
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.MvcApplicationPartsAssemblyInfo.cache
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\staticwebassets\Chalkboard.StaticWebAssets.Manifest.cache
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\staticwebassets\Chalkboard.StaticWebAssets.xml
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\scopedcss\bundle\Chalkboard.styles.css
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.RazorTargetAssemblyInfo.cache
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.CopyComplete
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.dll
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.pdb
+F:\Merkel\ESCHOOLAPI\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.genruntimeconfig.cache
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\web.config
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\appsettings.json
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.exe
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.deps.json
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.runtimeconfig.json
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.runtimeconfig.dev.json
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.pdb
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.exe
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.exe.config
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.rsp
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.exe
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.exe.config
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.rsp
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CSharp.Core.targets
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Managed.Core.targets
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Win32.Primitives.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.AppContext.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Collections.Immutable.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Console.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.StackTrace.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Globalization.Calendars.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.Compression.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.Compression.ZipFile.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.FileSystem.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Net.Http.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Net.Sockets.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Reflection.Metadata.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Text.Encoding.CodePages.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.ValueTuple.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.ReaderWriter.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XmlDocument.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XPath.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XPath.XDocument.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.exe
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.exe.config
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.rsp
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\VBCSCompiler.exe
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\VBCSCompiler.exe.config
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Dapper.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.AssemblyReference.cache
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.AssemblyInfoInputs.cache
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.AssemblyInfo.cs
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.CoreCompileInputs.cache
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.MvcApplicationPartsAssemblyInfo.cache
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\staticwebassets\Chalkboard.StaticWebAssets.Manifest.cache
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\staticwebassets\Chalkboard.StaticWebAssets.xml
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\scopedcss\bundle\Chalkboard.styles.css
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.RazorTargetAssemblyInfo.cache
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.CopyComplete
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.dll
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.pdb
+D:\Software\SAM\Personal\Merkel Ltd\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.genruntimeconfig.cache
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\web.config
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\appsettings.json
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.exe
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.deps.json
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.runtimeconfig.json
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.runtimeconfig.dev.json
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Chalkboard.pdb
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.exe
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.exe.config
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csc.rsp
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.exe
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.exe.config
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\csi.rsp
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.CSharp.Core.targets
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Managed.Core.targets
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\Microsoft.Win32.Primitives.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.AppContext.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Collections.Immutable.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Console.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Diagnostics.StackTrace.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Globalization.Calendars.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.Compression.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.Compression.ZipFile.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.FileSystem.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Net.Http.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Net.Sockets.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Reflection.Metadata.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Text.Encoding.CodePages.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.ValueTuple.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.ReaderWriter.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XmlDocument.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XPath.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\System.Xml.XPath.XDocument.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.exe
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.exe.config
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\vbc.rsp
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\VBCSCompiler.exe
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\roslyn\VBCSCompiler.exe.config
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Dapper.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\NuGet.Frameworks.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Convention.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Hosting.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.Runtime.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.AssemblyReference.cache
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.GeneratedMSBuildEditorConfig.editorconfig
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.AssemblyInfoInputs.cache
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.AssemblyInfo.cs
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.CoreCompileInputs.cache
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.MvcApplicationPartsAssemblyInfo.cache
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\staticwebassets\Chalkboard.StaticWebAssets.Manifest.cache
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\staticwebassets\Chalkboard.StaticWebAssets.xml
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\scopedcss\bundle\Chalkboard.styles.css
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.RazorTargetAssemblyInfo.cache
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.csproj.CopyComplete
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.dll
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.pdb
+D:\ESchool\ESCHOOLAPI(Live)\ESCHOOLAPI\Chalkboard\obj\Release\netcoreapp3.1\Chalkboard.genruntimeconfig.cache
