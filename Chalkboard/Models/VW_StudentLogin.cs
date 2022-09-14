@@ -17,5 +17,6 @@ namespace ESCHOOL.Models
         public string SchoolId { get; set; }
         public string SchoolName { get; set; }
         public int LoginActive { get; set; }
+        
     }
 }

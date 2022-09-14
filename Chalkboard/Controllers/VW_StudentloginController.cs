@@ -14,7 +14,7 @@ namespace ChalkboardAPI.Controllers
     [Route("api/[controller]")]
     public class VW_StudentloginController : ControllerBase
     {
-
+        
         private IVW_StudentLoginServicese _studentloginServicese;
 
         public VW_StudentloginController(IVW_StudentLoginServicese studentloginServicese)
@@ -44,11 +44,45 @@ namespace ChalkboardAPI.Controllers
             }
             catch (Exception)
             {
-
                 throw;
             }
             
         }
+
+        [Authorize]
+        [HttpPost("SaveLoginHistory")]
+        public IActionResult SaveLoginHistory(LoginHistory loginHistory)
+        {
+            try
+            {
+                int rowAffected = _studentloginServicese.InsertLoginHistory(loginHistory);
+
+                if (loginHistory == null)
+                {
+                    return BadRequest(new { message = "Object Cant be null" });
+                }
+                if (string.IsNullOrEmpty(loginHistory.MemberID))
+                {
+                    return BadRequest(new { message = "MembrerId Required" });
+                }
+
+                if (rowAffected == 0)
+                {
+                    return BadRequest(new { message = "Login History Record Failed" });
+                }
+                else if(rowAffected==1)
+                {
+                    return Ok("Save Successfull");
+                }
+                return BadRequest(new { message = "404" });
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
+
 
         [Authorize]
         [HttpGet]

@@ -57,7 +57,6 @@ namespace ESCHOOL.Controllers
             return null;
         }
 
-
         [Authorize]
         [HttpGet("GetExamResult")]
         public IActionResult GetExamResult(int id)

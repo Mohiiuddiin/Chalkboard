@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WSo9PBstPKHHfKoW5LVCJ74/HPYKUyTyGbnPZUxPSajuK0sVt2ATORWicaUxG4mBDJqSwkX1M/kiH81ueiDfug==",
+  "dgSpecHash": "R0oLejoycBX/zXAsqrAUcXcb8hkbS846yw/QAW1Lfo46d0Zp/GprlzcXNpTZJH4jK/ppgYShQsHQBX7LMaX3yg==",
   "success": true,
-  "projectFilePath": "D:\\ESchool\\ESCHOOLAPI(Live)\\ESCHOOLAPI\\Chalkboard\\Chalkboard.csproj",
+  "projectFilePath": "D:\\ESchool\\MobileAppAPI\\Chalkboard\\Chalkboard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mdmoh\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\mdmoh\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

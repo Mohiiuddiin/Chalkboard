@@ -27,6 +27,7 @@ namespace ChalkboardAPI.Services
         Task<bool> RemoveGuardianDeviceId(VW_StudentLogin entity);//Remove DeviceID Update API
         IEnumerable<VW_StudentLogin> GetAll();
         VW_StudentLogin GetById(int StudentloginId);
+        int InsertLoginHistory(LoginHistory loginHistory);
     }
     public class VW_StudentLoginServicese : IVW_StudentLoginServicese
     {
@@ -34,20 +35,18 @@ namespace ChalkboardAPI.Services
         {
             new VW_StudentLogin {
                 StudentId = 1,
-                Email = "sayem@gmail.com",
+                Email = "md.mohiiuddiin@gmail.com",
                 Password = "12345678"
             }
         };
 
         private readonly IConfiguration _configuration;
         private readonly AppSettings _appSettings;
-
         public VW_StudentLoginServicese(IOptions<AppSettings> appSettings, IConfiguration configuration)
         {
             _configuration = configuration;
             _appSettings = appSettings.Value;
         }
-
         public AuthenticateResponse Authenticate(AuthenticateRequest model)
         {
             var user = GetStudentCheck(model.Email, model.Password);
@@ -60,10 +59,98 @@ namespace ChalkboardAPI.Services
 
             // authentication successful so generate jwt token
             var token = generateJwtToken(user);
-
             return new AuthenticateResponse(user, token);
         }
+        public int InsertLoginHistory(LoginHistory loginHistory)
+        {
+            try
+            {
+                //LoginHistory loginHistoryToInsert = new LoginHistory();
+                
+                string connectionString = _configuration.GetConnectionString("StudentDB");
 
+                if (loginHistory.LogType == "LogIn")
+                {
+                    using (var connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        var affectedRows = connection.Execute("Insert into LoginHistory (MemberID,InTime," +
+                            "LoginIP,SchoolId,IsApp,DeviceId) values (@MemberID, @InTime,@LoginIP,@SchoolId,@IsApp,@DeviceId)",
+                            new
+                            {
+                                //Name = loginHistory.Name,
+                                MemberID = loginHistory.MemberID,
+                                //InTime = loginHistory.InTime,
+                                //OutTime = loginHistory.OutTime,
+                                InTime = DateTime.Now,
+                                //OutTime = null,
+                                //WorkingTimeHr = loginHistory.WorkingTimeHr,
+                                LoginIP = loginHistory.LoginIP,
+                                SchoolId = loginHistory.SchoolId,
+                                IsApp = loginHistory.IsApp,
+                                DeviceId = loginHistory.DeviceId
+                            });
+                        connection.Close();
+                        return affectedRows;
+                    }
+                }
+                else if (loginHistory.LogType == "LogOut")
+                {
+                    using (var connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        var LID = connection.Query<Int32>("Select max(LID) from LoginHistory where MemberID = '" + loginHistory.MemberID+ "' and SchoolId='"+ loginHistory.SchoolId+ "' and DeviceId='"+loginHistory.DeviceId+"'").FirstOrDefault();
+                        LoginHistory findLastEntryByDeviceId = connection.Query<LoginHistory>("Select * from LoginHistory where LID='"+LID+"'").FirstOrDefault();
+
+                        connection.Close();
+                        connection.Open();
+                        var affectedRows = connection.Execute("Update LoginHistory set OutTime = @OutTime, WorkingTimeHr = DATEDIFF(HOUR, InTime, OutTime) Where LID = @LID",
+                            new 
+                            {
+                                LID = findLastEntryByDeviceId.LID,
+                                MemberID = loginHistory.MemberID,
+                                ////InTime = loginHistory.InTime,
+                                ////OutTime = loginHistory.OutTime,
+                                //InTime = DateTime.Now,
+                                OutTime = DateTime.Now,
+                                WorkingTimeHr = (DateTime.Now - findLastEntryByDeviceId.InTime).ToString(),
+                                //LoginIP = loginHistory.LoginIP,
+                                SchoolId = loginHistory.SchoolId,
+                                //IsApp = loginHistory.IsApp,
+                                DeviceId = loginHistory.DeviceId
+                            });
+                        connection.Close();
+                        return affectedRows;
+                        //connection.Open();
+                        //var affectedRows = connection.Execute("Insert into LoginHistory (MemberID,InTime,OutTime,WorkingTimeHr," +
+                        //    "LoginIP,SchoolId,IsApp,DeviceId) values (@MemberID, @InTime,@OutTime,@WorkingTimeHr,@LoginIP,@SchoolId,@IsApp,@DeviceId)",
+                        //    new
+                        //    {
+                        //        //Name = loginHistory.Name,
+                        //        MemberID = loginHistory.MemberID,
+                        //        //InTime = loginHistory.InTime,
+                        //        //OutTime = loginHistory.OutTime,
+                        //        InTime = DateTime.Now,
+                        //        OutTime = DateTime.Now,
+                        //        WorkingTimeHr = loginHistory.WorkingTimeHr,
+                        //        LoginIP = loginHistory.LoginIP,
+                        //        SchoolId = loginHistory.SchoolId,
+                        //        IsApp = loginHistory.IsApp,
+                        //        DeviceId = loginHistory.DeviceId
+                        //    });
+                        //connection.Close();
+                        //return affectedRows;
+                    }
+                }
+                return 0;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         public AuthenticateResponse GuardianAuthenticate(AuthenticateRequest model)
         {
             var user = GetGuardianCheck(model.Email, model.Password);
@@ -402,19 +489,19 @@ namespace ChalkboardAPI.Services
             }
         }
 
-
         // helper methods
         private string generateJwtToken(VW_StudentLogin user)
         {
-            // generate token that is valid for 3 days
+            // generate token that is valid for 365 days
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new[] { new Claim("StudentId", user.StudentId.ToString()) }),
-                Expires = DateTime.UtcNow.AddDays(3),
+                Expires = DateTime.UtcNow.AddDays(365),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
+
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }

@@ -6906,11 +6906,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ESchool\\ESCHOOLAPI(Live)\\ESCHOOLAPI\\Chalkboard\\Chalkboard.csproj",
+      "projectUniqueName": "D:\\ESchool\\MobileAppAPI\\Chalkboard\\Chalkboard.csproj",
       "projectName": "Chalkboard",
-      "projectPath": "D:\\ESchool\\ESCHOOLAPI(Live)\\ESCHOOLAPI\\Chalkboard\\Chalkboard.csproj",
+      "projectPath": "D:\\ESchool\\MobileAppAPI\\Chalkboard\\Chalkboard.csproj",
       "packagesPath": "C:\\Users\\mdmoh\\.nuget\\packages\\",
-      "outputPath": "D:\\ESchool\\ESCHOOLAPI(Live)\\ESCHOOLAPI\\Chalkboard\\obj\\",
+      "outputPath": "D:\\ESchool\\MobileAppAPI\\Chalkboard\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
