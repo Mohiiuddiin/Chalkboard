@@ -30,6 +30,51 @@ namespace ESCHOOL.Controllers
 
         //    return Ok(response);
         //}
+        [Authorize]
+        [HttpPost("SaveAttendance")]
+        public IActionResult SaveAttendance(StdAttendance attendance)
+        {
+            try
+            {
+                int rowAffected = _stdAttendanceServices.InsertAttendance(attendance);
+
+                if (attendance == null)
+                {
+                    return BadRequest(new { message = "Object Cant be null" });
+                }
+                if (string.IsNullOrEmpty(attendance.StdId))
+                {
+                    return BadRequest(new { message = "Student Id Required" });
+                }
+
+                if (rowAffected == 0)
+                {
+                    return BadRequest(new { message = "Failed" });
+                }
+                else if (rowAffected == 1)
+                {
+                    return Ok("Save Successfull");
+                }
+                else if (rowAffected == -1)
+                {
+                    return Ok("already checked in");
+                }
+                else if (rowAffected == -2)
+                {
+                    return Ok("already checked out");
+                }
+                else if (rowAffected == -3)
+                {
+                    return Ok("please check in first");
+                }
+                return BadRequest(new { message = "404" });
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
 
         [Authorize]
         [HttpGet("GetById")]

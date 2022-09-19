@@ -17,5 +17,6 @@ namespace ESCHOOL.Models
         public int IsApp { get; set; }
         public string DeviceId { get; set; }
         public string LogType { get; set; }
+        public int IsStudentOrParent { get; set; }
     }
 }

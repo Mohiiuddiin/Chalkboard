@@ -68,30 +68,44 @@ namespace ChalkboardAPI.Services
                 //LoginHistory loginHistoryToInsert = new LoginHistory();
                 
                 string connectionString = _configuration.GetConnectionString("StudentDB");
+                
 
                 if (loginHistory.LogType == "LogIn")
                 {
+                    
                     using (var connection = new SqlConnection(connectionString))
                     {
                         connection.Open();
-                        var affectedRows = connection.Execute("Insert into LoginHistory (MemberID,InTime," +
-                            "LoginIP,SchoolId,IsApp,DeviceId) values (@MemberID, @InTime,@LoginIP,@SchoolId,@IsApp,@DeviceId)",
-                            new
-                            {
-                                //Name = loginHistory.Name,
-                                MemberID = loginHistory.MemberID,
-                                //InTime = loginHistory.InTime,
-                                //OutTime = loginHistory.OutTime,
-                                InTime = DateTime.Now,
-                                //OutTime = null,
-                                //WorkingTimeHr = loginHistory.WorkingTimeHr,
-                                LoginIP = loginHistory.LoginIP,
-                                SchoolId = loginHistory.SchoolId,
-                                IsApp = loginHistory.IsApp,
-                                DeviceId = loginHistory.DeviceId
-                            });
+                        var IsExistLoginHistory = connection.Query<LoginHistory>("Select * from LoginHistory where  cast(InTime as date) = cast(GETDATE() as date) and MemberID = '" + loginHistory.MemberID + "' and SchoolId='" + loginHistory.SchoolId + "' and DeviceId='" + loginHistory.DeviceId + "'").FirstOrDefault();
+
                         connection.Close();
-                        return affectedRows;
+                        if (IsExistLoginHistory!=null)
+                        {
+                            return -1;
+                        }
+                        else
+                        {
+                            connection.Open();
+                            var affectedRows = connection.Execute("Insert into LoginHistory (MemberID,InTime," +
+                                "LoginIP,SchoolId,IsApp,DeviceId,IsStudentOrParent) values (@MemberID, @InTime,@LoginIP,@SchoolId,@IsApp,@DeviceId,@IsStudentOrParent)",
+                                new
+                                {
+                                    //Name = loginHistory.Name,
+                                    MemberID = loginHistory.MemberID,
+                                    //InTime = loginHistory.InTime,
+                                    //OutTime = loginHistory.OutTime,
+                                    InTime = DateTime.Now,
+                                    //OutTime = null,
+                                    //WorkingTimeHr = loginHistory.WorkingTimeHr,
+                                    LoginIP = loginHistory.LoginIP,
+                                    SchoolId = loginHistory.SchoolId,
+                                    IsApp = loginHistory.IsApp,
+                                    DeviceId = loginHistory.DeviceId,
+                                    IsStudentOrParent = loginHistory.IsStudentOrParent
+                                });
+                            connection.Close();
+                            return affectedRows;
+                        }                        
                     }
                 }
                 else if (loginHistory.LogType == "LogOut")
@@ -99,13 +113,25 @@ namespace ChalkboardAPI.Services
                     using (var connection = new SqlConnection(connectionString))
                     {
                         connection.Open();
-
-                        var LID = connection.Query<Int32>("Select max(LID) from LoginHistory where MemberID = '" + loginHistory.MemberID+ "' and SchoolId='"+ loginHistory.SchoolId+ "' and DeviceId='"+loginHistory.DeviceId+"'").FirstOrDefault();
-                        LoginHistory findLastEntryByDeviceId = connection.Query<LoginHistory>("Select * from LoginHistory where LID='"+LID+"'").FirstOrDefault();
-
+                        var LID = new Int32();
+                        LoginHistory findLastEntryByDeviceId = new LoginHistory();
+                        try
+                        {
+                            LID = connection.Query<Int32>("Select max(LID) from LoginHistory where cast(InTime as date) = cast(GETDATE() as date) and MemberID = '" + loginHistory.MemberID + "' and SchoolId='" + loginHistory.SchoolId + "' and DeviceId='" + loginHistory.DeviceId + "'").FirstOrDefault();
+                        }
+                        catch (Exception)
+                        {
+                            return -2;
+                        }
+                        if (LID > 0)
+                        {
+                            findLastEntryByDeviceId = connection.Query<LoginHistory>("Select * from LoginHistory where LID='" + LID + "'").FirstOrDefault();
+                        }
+                        
                         connection.Close();
                         connection.Open();
-                        var affectedRows = connection.Execute("Update LoginHistory set OutTime = @OutTime, WorkingTimeHr = DATEDIFF(HOUR, InTime, OutTime) Where LID = @LID",
+                        TimeSpan ts = (TimeSpan)(DateTime.Now - findLastEntryByDeviceId.InTime);
+                        var affectedRows = connection.Execute("Update LoginHistory set OutTime = @OutTime, WorkingTimeHr=@WorkingTimeHr Where LID = @LID",
                             new 
                             {
                                 LID = findLastEntryByDeviceId.LID,
@@ -114,33 +140,14 @@ namespace ChalkboardAPI.Services
                                 ////OutTime = loginHistory.OutTime,
                                 //InTime = DateTime.Now,
                                 OutTime = DateTime.Now,
-                                WorkingTimeHr = (DateTime.Now - findLastEntryByDeviceId.InTime).ToString(),
+                                WorkingTimeHr = ts.ToString(@"hh\:mm\:ss"),
                                 //LoginIP = loginHistory.LoginIP,
                                 SchoolId = loginHistory.SchoolId,
                                 //IsApp = loginHistory.IsApp,
                                 DeviceId = loginHistory.DeviceId
                             });
                         connection.Close();
-                        return affectedRows;
-                        //connection.Open();
-                        //var affectedRows = connection.Execute("Insert into LoginHistory (MemberID,InTime,OutTime,WorkingTimeHr," +
-                        //    "LoginIP,SchoolId,IsApp,DeviceId) values (@MemberID, @InTime,@OutTime,@WorkingTimeHr,@LoginIP,@SchoolId,@IsApp,@DeviceId)",
-                        //    new
-                        //    {
-                        //        //Name = loginHistory.Name,
-                        //        MemberID = loginHistory.MemberID,
-                        //        //InTime = loginHistory.InTime,
-                        //        //OutTime = loginHistory.OutTime,
-                        //        InTime = DateTime.Now,
-                        //        OutTime = DateTime.Now,
-                        //        WorkingTimeHr = loginHistory.WorkingTimeHr,
-                        //        LoginIP = loginHistory.LoginIP,
-                        //        SchoolId = loginHistory.SchoolId,
-                        //        IsApp = loginHistory.IsApp,
-                        //        DeviceId = loginHistory.DeviceId
-                        //    });
-                        //connection.Close();
-                        //return affectedRows;
+                        return affectedRows;                        
                     }
                 }
                 return 0;

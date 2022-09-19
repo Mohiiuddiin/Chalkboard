@@ -74,6 +74,14 @@ namespace ChalkboardAPI.Controllers
                 {
                     return Ok("Save Successfull");
                 }
+                else if (rowAffected == -1)
+                {
+                    return Ok("Already Logged In Today");
+                }
+                else if (rowAffected == -2)
+                {
+                    return Ok("First Log In");
+                }
                 return BadRequest(new { message = "404" });
             }
             catch (Exception)

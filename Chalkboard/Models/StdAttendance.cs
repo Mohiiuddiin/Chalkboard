@@ -13,10 +13,14 @@ namespace ESCHOOL.Models
         public string StdAttClassId { get; set; }
         public string StdAttSectionId { get; set; }
         public DateTime StdAttDate { get; set; }
+        public TimeSpan InTime { get; set; }
+        public TimeSpan OutTime { get; set; }
+        public TimeSpan WHourTime { get; set; }
         public string StdStatus { get; set; }
         public string StdAttEntryBy { get; set; }
         public string MonthName { get; set; }
         public int SchoolId { get; set; }
+        public string CheckStatus { get; set; }
 
 
         public string January { get; set; }

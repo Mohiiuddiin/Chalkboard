@@ -1,5 +1,6 @@
 ﻿using ChalkboardAPI.Helpers;
 using ChalkboardAPI.Models;
+using Dapper;
 using ESCHOOL.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
@@ -21,6 +22,7 @@ namespace ESCHOOL.Services
         AuthenticateResponse Authenticate(AuthenticateRequest model);
         IEnumerable<StdAttendance> GetAll();
         List<StdAttendance> GetById(int id);
+        int InsertAttendance(StdAttendance attendance);
     }
     public class StdAttendanceServices : IStdAttendanceServices
     {
@@ -53,6 +55,102 @@ namespace ESCHOOL.Services
             return new AuthenticateResponse(user, token);
         }
 
+        public int InsertAttendance(StdAttendance attendance)
+        {
+            try
+            {
+                //LoginHistory loginHistoryToInsert = new LoginHistory();
+                string connectionString = _configuration.GetConnectionString("StudentDB");
+
+                if (attendance.CheckStatus == "Check In")
+                {
+
+                    using (var connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        var IsExistAttendance = connection.Query<StdAttendance>
+                            ("select * from StdAttendance where StdId="+attendance.StdId+" and cast(StdAttDate as date)=cast(GETDATE() as date)").FirstOrDefault();
+
+                        connection.Close();
+                        if (IsExistAttendance != null)
+                        {
+                            if (IsExistAttendance.CheckStatus == "Check In")
+                            {
+                                return -1;//to return already checked in message
+                            }
+                            else if (IsExistAttendance.CheckStatus == "Check Out")
+                            {
+                                return -2;//to return already checked Out message
+                            }
+                            
+                        }
+                        else
+                        {
+                            connection.Open();
+                            TimeSpan inTime = DateTime.Now.TimeOfDay;
+
+                            var affectedRows = connection.Execute("Insert into StdAttendance (StdId,StdAttClassId," +
+                                "StdAttSectionId,StdAttDate,StdStatus," +
+                                "StdAttEntryBy,SchoolId,InTime,CheckStatus) " +
+                                "values (@StdId, @StdAttClassId,@StdAttSectionId,@StdAttDate," +
+                                "@StdStatus,@StdAttEntryBy,@SchoolId,@InTime,@CheckStatus)",
+                                new
+                                {
+                                    StdId = attendance.StdId,
+                                    StdAttClassId = attendance.StdAttClassId,
+                                    StdAttSectionId = attendance.StdAttSectionId,
+                                    StdAttDate = DateTime.Now,
+                                    StdStatus = attendance.StdStatus,
+                                    StdAttEntryBy = attendance.StdAttEntryBy,
+                                    SchoolId = attendance.SchoolId,
+                                    InTime = DateTime.Now.TimeOfDay,                                    
+                                    //WHourTime = attendance.WHourTime,
+                                    CheckStatus = attendance.CheckStatus
+                                });
+                            connection.Close();
+                            return affectedRows;
+                        }
+                    }
+                }
+                else if (attendance.CheckStatus == "Check Out")
+                {
+                    using (var connection = new SqlConnection(connectionString))
+                    {   
+                        connection.Open();
+                        var IsExistAttendance = connection.Query<StdAttendance>
+                            ("select * from StdAttendance where StdId=" + attendance.StdId + " and cast(StdAttDate as date)=cast(GETDATE() as date)").FirstOrDefault();
+
+                        connection.Close();
+                        if (IsExistAttendance.CheckStatus== "Check Out")
+                        {
+                            return -2; //to return already checked out message
+                        }
+                        else if (IsExistAttendance == null)
+                        {
+                            return -3; //please check in first
+                        }
+                        
+                        connection.Open();
+                        TimeSpan outTime = DateTime.Now.TimeOfDay;
+                        var affectedRows = connection.Execute("Update StdAttendance set OutTime=@OutTime,WHourTime=@WHourTime,CheckStatus='Check Out' Where StdId = @StdId and cast(StdAttDate as date)=cast(GETDATE() as date) and CheckStatus='Check In'",
+                            new
+                            {
+                                StdId = attendance.StdId,                                
+                                OutTime = outTime,
+                                WHourTime = outTime - IsExistAttendance.InTime,                            
+                            });
+                        connection.Close();
+                        return affectedRows;
+                    }
+                }
+                return 0;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         public IEnumerable<StdAttendance> GetAll()
         {
             List<StdAttendance> studentProfileViews = new List<StdAttendance>();
