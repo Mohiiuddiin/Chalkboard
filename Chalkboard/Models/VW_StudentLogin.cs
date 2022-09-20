@@ -9,8 +9,10 @@ namespace ESCHOOL.Models
     {
         public int StudentId { get; set; }
         public string Email { get; set; }
+        //public string EmailOrPhone { get; set; }
         public string Password { get; set; }
         public string GuardianEmail { get; set; }
+        //public string GuardianEmailOrPhone { get; set; }
         public string GuardianPassword { get; set; }
         public string DeviceId { get; set; }
         public string GuardianDeviceId { get; set; }

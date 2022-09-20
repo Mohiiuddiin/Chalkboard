@@ -1,4 +1,5 @@
 ﻿using ESCHOOL.Models;
+using Chalkboard.Models.CustomModels;
 using ESCHOOL.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -76,12 +77,42 @@ namespace ESCHOOL.Controllers
 
         }
 
+
+        [Authorize]
+        [HttpGet("GetStudentAttendance")]
+        public IActionResult GetStudentAttendance(int stdId,DateTime? fromDate,DateTime? toDate)
+        {
+            try
+            {
+                if (stdId==0)
+                {                    
+                    return Ok("STUDENT ID REQUIRED");
+                }
+                else
+                {
+                    //if (fromDate!=null && toDate!=null)
+                    //{
+                        var data = _stdAttendanceServices.GetAttendanceByStdId(stdId,fromDate,toDate);
+                        return Ok(data);
+                    //}
+                    //else
+                    //{
+                    //    var data = _stdAttendanceServices.GetAttendanceByStdId(stdId,null,null);
+                    //    return Ok(data);
+                    //}
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
         [Authorize]
         [HttpGet("GetById")]
         public IActionResult GetById(int id)
         {
             var users = _stdAttendanceServices.GetById(id);
-
             return Ok(users);
         }
 

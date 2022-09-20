@@ -178,7 +178,15 @@ namespace ChalkboardAPI.Services
             VW_StudentLogin studentProfileView = new VW_StudentLogin();
             string connectionString = _configuration.GetConnectionString("StudentDB");
             SqlConnection connection = new SqlConnection(connectionString);
-            string query = "Select * FROM VW_StudentLogin WHERE Email='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
+            string query="";
+            if (email.Contains('@'))
+            {
+                query = "Select * FROM VW_StudentLogin WHERE Email='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
+            }
+            else
+            {
+                query = "Select * FROM VW_StudentLogin WHERE PhoneMobile='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
+            }
             SqlCommand com = new SqlCommand(query, connection);
             connection.Open();
             SqlDataReader reader = com.ExecuteReader();
@@ -211,7 +219,17 @@ namespace ChalkboardAPI.Services
             VW_StudentLogin studentProfileView = new VW_StudentLogin();
             string connectionString = _configuration.GetConnectionString("StudentDB");
             SqlConnection connection = new SqlConnection(connectionString);
-            string query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianEmail='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
+            string query = "";
+            if (email.Contains('@'))
+            {
+               query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianEmail='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
+
+            }
+            else
+            {
+                query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianPhone='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
+
+            }
             SqlCommand com = new SqlCommand(query, connection);
             connection.Open();
             SqlDataReader reader = com.ExecuteReader();

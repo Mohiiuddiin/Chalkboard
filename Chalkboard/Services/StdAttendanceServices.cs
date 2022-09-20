@@ -1,4 +1,5 @@
-﻿using ChalkboardAPI.Helpers;
+﻿using Chalkboard.Models.CustomModels;
+using ChalkboardAPI.Helpers;
 using ChalkboardAPI.Models;
 using Dapper;
 using ESCHOOL.Models;
@@ -23,6 +24,7 @@ namespace ESCHOOL.Services
         IEnumerable<StdAttendance> GetAll();
         List<StdAttendance> GetById(int id);
         int InsertAttendance(StdAttendance attendance);
+        List<StdAttendanceVM> GetAttendanceByStdId(int StdId, DateTime? fromDate, DateTime? toDate);
     }
     public class StdAttendanceServices : IStdAttendanceServices
     {
@@ -179,6 +181,50 @@ namespace ESCHOOL.Services
             connection.Close();
             return studentProfileViews;
             //return _students;
+        }
+        public List<StdAttendanceVM> GetAttendanceByStdId(int StdId, DateTime? fromDate, DateTime? toDate)
+        {
+            try
+            {
+                List<StdAttendanceVM> stdAttendances = new List<StdAttendanceVM>();
+                string connectionString = _configuration.GetConnectionString("StudentDB");
+
+                using (var connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    if (fromDate != null && toDate != null)
+                    {
+                        stdAttendances = connection.Query<StdAttendanceVM>
+                        (@"SELECT att.StdId,std.StudentNameE StdName,s.SchoolName,sc.SectionName,c.ClassName,cast(att.StdAttDate as date)StdAttDate,StdStatus Status,DATENAME(month,StdAttDate) Month
+                          FROM[ESCHOOL].[dbo].[StdAttendance] att
+                          inner join Students std on std.StudentID = att.StdId
+                          inner join Classes c on att.StdAttClassId = c.ClassId
+                          inner join SubscriberSchools s on s.SchoolId = att.SchoolId
+                          inner join Sections sc on sc.SectionId = att.StdAttSectionId
+                          where cast(att.StdAttDate as date) >= '" + Convert.ToDateTime(fromDate).Date + "' and cast(att.StdAttDate as date) <= '" + Convert.ToDateTime(toDate).Date + "' and att.StdId=" + StdId).ToList();
+                    }
+                    else
+                    {
+                        stdAttendances = connection.Query<StdAttendanceVM>
+                        (@"SELECT att.StdId,std.StudentNameE StdName,s.SchoolName,sc.SectionName,c.ClassName,cast(att.StdAttDate as date)StdAttDate,StdStatus Status,DATENAME(month,StdAttDate) Month
+                          FROM[ESCHOOL].[dbo].[StdAttendance] att
+                          inner join Students std on std.StudentID = att.StdId
+                          inner join Classes c on att.StdAttClassId = c.ClassId
+                          inner join SubscriberSchools s on s.SchoolId = att.SchoolId
+                          inner join Sections sc on sc.SectionId = att.StdAttSectionId
+                          where month(att.StdAttDate) = month(GETDATE()) and att.StdId=" + StdId).ToList();
+                    }
+                    connection.Close();
+                    return stdAttendances;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            
+
+            
         }
 
         public List<StdAttendance> GetById(int id)
