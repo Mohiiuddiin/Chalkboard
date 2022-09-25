@@ -66,20 +66,39 @@ namespace ChalkboardAPI.Services
             try
             {
                 //LoginHistory loginHistoryToInsert = new LoginHistory();
-                
-                string connectionString = _configuration.GetConnectionString("StudentDB");
-                
 
-                if (loginHistory.LogType == "LogIn")
+                string connectionString = _configuration.GetConnectionString("StudentDB");
+                //SELECT Email,GuardianEmail
+                //FROM[ESCHOOL].[dbo].[Students] where PhoneMobile = '' or Email = ''
+                if (!loginHistory.MemberID.Contains('@'))
                 {
-                    
                     using (var connection = new SqlConnection(connectionString))
                     {
                         connection.Open();
-                        var IsExistLoginHistory = connection.Query<LoginHistory>("Select * from LoginHistory where  cast(InTime as date) = cast(GETDATE() as date) and MemberID = '" + loginHistory.MemberID + "' and SchoolId='" + loginHistory.SchoolId + "' and DeviceId='" + loginHistory.DeviceId + "'").FirstOrDefault();
+                        if (loginHistory.IsStudentOrParent == 6)
+                        {
+                            loginHistory.MemberID = connection.Query<string>("SELECT Email FROM[ESCHOOL].[dbo].[Students] where PhoneMobile = '" + loginHistory.MemberID + "' or Email = '" + loginHistory.MemberID + "'").FirstOrDefault();
+
+                        }
+                        else if (loginHistory.IsStudentOrParent == 5)
+                        {
+                            loginHistory.MemberID = connection.Query<string>("SELECT GuardianEmail FROM[ESCHOOL].[dbo].[Students] where GuardianPhone = '" + loginHistory.MemberID + "' or Email = '" + loginHistory.MemberID + "'").FirstOrDefault();
+
+                        }
+                        connection.Close();
+                    }
+                }
+
+                if (loginHistory.LogType == "LogIn")
+                {
+
+                    using (var connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+                        var IsExistLoginHistory = connection.Query<LoginHistory>("Select * from LoginHistory where  cast(InTime as date) = cast(GETDATE() as date) and MemberID = '" + loginHistory.MemberID + "'").FirstOrDefault();
 
                         connection.Close();
-                        if (IsExistLoginHistory!=null)
+                        if (IsExistLoginHistory != null)
                         {
                             return -1;
                         }
@@ -105,7 +124,7 @@ namespace ChalkboardAPI.Services
                                 });
                             connection.Close();
                             return affectedRows;
-                        }                        
+                        }
                     }
                 }
                 else if (loginHistory.LogType == "LogOut")
@@ -117,7 +136,7 @@ namespace ChalkboardAPI.Services
                         LoginHistory findLastEntryByDeviceId = new LoginHistory();
                         try
                         {
-                            LID = connection.Query<Int32>("Select max(LID) from LoginHistory where cast(InTime as date) = cast(GETDATE() as date) and MemberID = '" + loginHistory.MemberID + "' and SchoolId='" + loginHistory.SchoolId + "' and DeviceId='" + loginHistory.DeviceId + "'").FirstOrDefault();
+                            LID = connection.Query<Int32>("Select max(LID) from LoginHistory where cast(InTime as date) = cast(GETDATE() as date) and MemberID = '" + loginHistory.MemberID + "'").FirstOrDefault();
                         }
                         catch (Exception)
                         {
@@ -127,12 +146,12 @@ namespace ChalkboardAPI.Services
                         {
                             findLastEntryByDeviceId = connection.Query<LoginHistory>("Select * from LoginHistory where LID='" + LID + "'").FirstOrDefault();
                         }
-                        
+
                         connection.Close();
                         connection.Open();
                         TimeSpan ts = (TimeSpan)(DateTime.Now - findLastEntryByDeviceId.InTime);
-                        var affectedRows = connection.Execute("Update LoginHistory set OutTime = @OutTime, WorkingTimeHr=@WorkingTimeHr Where LID = @LID",
-                            new 
+                        var affectedRows = connection.Execute("Update LoginHistory set OutTime = @OutTime, WorkingTimeHr=@WorkingTimeHr,DeviceId=@DeviceId Where LID = @LID",
+                            new
                             {
                                 LID = findLastEntryByDeviceId.LID,
                                 MemberID = loginHistory.MemberID,
@@ -147,7 +166,7 @@ namespace ChalkboardAPI.Services
                                 DeviceId = loginHistory.DeviceId
                             });
                         connection.Close();
-                        return affectedRows;                        
+                        return affectedRows;
                     }
                 }
                 return 0;
@@ -178,7 +197,7 @@ namespace ChalkboardAPI.Services
             VW_StudentLogin studentProfileView = new VW_StudentLogin();
             string connectionString = _configuration.GetConnectionString("StudentDB");
             SqlConnection connection = new SqlConnection(connectionString);
-            string query="";
+            string query = "";
             if (email.Contains('@'))
             {
                 query = "Select * FROM VW_StudentLogin WHERE Email='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
@@ -222,7 +241,7 @@ namespace ChalkboardAPI.Services
             string query = "";
             if (email.Contains('@'))
             {
-               query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianEmail='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
+                query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianEmail='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
 
             }
             else
@@ -316,17 +335,24 @@ namespace ChalkboardAPI.Services
             {
                 try
                 {
-                    const string query = "UPDATE [dbo].[Students] SET DeviceId= @DeviceId WHERE StudentID=@StudentID AND Email = @Email";
+                    string query = "";
+                    if (entity.Email.Contains('@'))
+                    {
+                        query = "UPDATE [dbo].[Students] SET DeviceId= @DeviceId WHERE StudentID=@StudentID AND Email = @Email";
+                    }
+                    else
+                    {
+                        query = "UPDATE [dbo].[Students] SET DeviceId= @DeviceId WHERE StudentID=@StudentID AND PhoneMobile = @Email";
+                    }
+                     
                     SqlCommand cmd = new SqlCommand(query, con)
                     {
                         CommandType = CommandType.Text,
                     };
 
-
                     cmd.Parameters.AddWithValue("@DeviceId", entity.DeviceId);
                     cmd.Parameters.AddWithValue("@StudentID", entity.StudentId);
                     cmd.Parameters.AddWithValue("@Email", entity.Email);
-
 
                     con.Open();
                     rowCount = cmd.ExecuteNonQuery();
@@ -369,7 +395,17 @@ namespace ChalkboardAPI.Services
             {
                 try
                 {
-                    const string query = "UPDATE [dbo].[Students] SET DeviceId= @DeviceId WHERE StudentID=@StudentID AND Email = @Email";
+                    
+
+                    string query = "";
+                    if (entity.Email.Contains('@'))
+                    {
+                        query = "UPDATE [dbo].[Students] SET DeviceId= @DeviceId WHERE StudentID=@StudentID AND Email = @Email";
+                    }
+                    else
+                    {
+                        query = "UPDATE [dbo].[Students] SET DeviceId= @DeviceId WHERE StudentID=@StudentID AND PhoneMobile = @Email";
+                    }
                     SqlCommand cmd = new SqlCommand(query, con)
                     {
                         CommandType = CommandType.Text,
@@ -421,7 +457,16 @@ namespace ChalkboardAPI.Services
             {
                 try
                 {
-                    const string query = "UPDATE [dbo].[Students] SET GuardianDeviceId= @GuardianDeviceId WHERE StudentID=@StudentID AND GuardianEmail = @GuardianEmail";
+
+                    string query = "";
+                    if (entity.GuardianEmail.Contains('@'))
+                    {
+                        query = "UPDATE [dbo].[Students] SET GuardianDeviceId= @GuardianDeviceId WHERE StudentID=@StudentID AND GuardianEmail = @GuardianEmail";
+                    }
+                    else
+                    {
+                        query = "UPDATE [dbo].[Students] SET GuardianDeviceId= @GuardianDeviceId WHERE StudentID=@StudentID AND GuardianPhone = @GuardianEmail";
+                    }
                     SqlCommand cmd = new SqlCommand(query, con)
                     {
                         CommandType = CommandType.Text,
@@ -430,7 +475,7 @@ namespace ChalkboardAPI.Services
 
                     cmd.Parameters.AddWithValue("@GuardianDeviceId", entity.GuardianDeviceId);
                     cmd.Parameters.AddWithValue("@StudentID", entity.StudentId);
-                    cmd.Parameters.AddWithValue("@GuardianEmail", entity.Email);
+                    cmd.Parameters.AddWithValue("@GuardianEmail", entity.GuardianEmail);
 
 
                     con.Open();
