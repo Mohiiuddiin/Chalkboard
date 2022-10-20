@@ -38,8 +38,8 @@ namespace ChalkboardAPI.Controllers
         {
             var users = _studentsService.GetById(id);
             return Ok(users);
-
         }
+
         [Authorize]
         [HttpGet]
         public IActionResult GetAll()

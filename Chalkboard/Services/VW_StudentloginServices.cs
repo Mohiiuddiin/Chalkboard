@@ -200,11 +200,31 @@ namespace ChalkboardAPI.Services
             string query = "";
             if (email.Contains('@'))
             {
-                query = "Select * FROM VW_StudentLogin WHERE Email='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
+                //query = "Select * FROM VW_StudentLogin WHERE Email='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
+                query = "SELECT dbo.Students.Email, dbo.Students.Password, dbo.Students.StudentID, dbo.Students.SchoolId, "+
+                        "dbo.SubscriberSchools.SchoolName, dbo.Students.IsActive, dbo.Students.LoginActive, dbo.Students.SessionMasterID, "+
+                        "dbo.Students.SessionDetailsID,dbo.Students.ClassId " +
+                        "FROM  dbo.Students "+
+                        "INNER JOIN dbo.SubscriberSchools ON dbo.Students.SchoolId = dbo.SubscriberSchools.SchoolId " +
+                        "inner join dbo.SessionMaster on SessionMaster.SessionID = Students.SessionMasterID " +
+                        "inner join dbo.SessionDetails on SessionDetails.SessionDetailsID = Students.SessionDetailsID " +
+                        "where Students.Email = '" + email + "' AND Students.Password = '" + password + "' AND Students.LoginActive = '1' " +
+                        "and SessionMaster.IsActive = '1' and SubscriberSchools.IsActive = 1 and SessionMaster.IsActive = 1 and GETDATE()>= SessionDetails.SessionStartDate " +
+                        "and GETDATE()<= SessionDetails.SessionEndDate";
             }
             else
             {
-                query = "Select * FROM VW_StudentLogin WHERE PhoneMobile='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
+                //query = "Select * FROM VW_StudentLogin WHERE PhoneMobile='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
+                query = "SELECT dbo.Students.Email, dbo.Students.Password, dbo.Students.StudentID, dbo.Students.SchoolId, " +
+                        "dbo.SubscriberSchools.SchoolName, dbo.Students.IsActive, dbo.Students.LoginActive, dbo.Students.SessionMasterID, " +
+                        "dbo.Students.SessionDetailsID,dbo.Students.ClassId " +
+                        "FROM  dbo.Students " +
+                        "INNER JOIN dbo.SubscriberSchools ON dbo.Students.SchoolId = dbo.SubscriberSchools.SchoolId " +
+                        "inner join dbo.SessionMaster on SessionMaster.SessionID = Students.SessionMasterID " +
+                        "inner join dbo.SessionDetails on SessionDetails.SessionDetailsID = Students.SessionDetailsID " +
+                        "where Students.PhoneMobile = '" + email + "' AND Students.Password = '" + password + "' AND Students.LoginActive = '1' " +
+                        "and SessionMaster.IsActive = '1' and SubscriberSchools.IsActive = 1 and SessionMaster.IsActive = 1 and GETDATE()>= SessionDetails.SessionStartDate " +
+                        "and GETDATE()<= SessionDetails.SessionEndDate";
             }
             SqlCommand com = new SqlCommand(query, connection);
             connection.Open();
@@ -217,6 +237,7 @@ namespace ChalkboardAPI.Services
                 studentProfileView.SchoolId = reader["SchoolId"].ToString();
                 studentProfileView.SchoolName = reader["SchoolName"].ToString();
                 studentProfileView.LoginActive = Convert.ToInt32(reader["LoginActive"]);
+                studentProfileView.ClassId = reader["ClassId"].ToString();
                 //studentProfileView.Token = reader["Token"].ToString();
             }
             reader.Close();
@@ -240,13 +261,23 @@ namespace ChalkboardAPI.Services
             SqlConnection connection = new SqlConnection(connectionString);
             string query = "";
             if (email.Contains('@'))
-            {
-                query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianEmail='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
+            {                
+                //query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianEmail='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
+                query = "Select * FROM Students S  INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId"+
+                          " inner join SessionMaster sess on sess.SessionID = s.SessionMasterID"+
+                          " WHERE GuardianEmail = '" + email + "' AND GuardianPassword = '" + password + "'"+
+                          " AND LoginActive = '1' and sc.IsActive = 1 and GETDATE()<= SubscriptionExpireDate" +
+                          " and sess.IsActive = '1'";
 
             }
             else
             {
-                query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianPhone='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
+                query = "Select * FROM Students S  INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId" +
+                          " inner join SessionMaster sess on sess.SessionID = s.SessionMasterID" +
+                          " WHERE GuardianPhone = '" + email + "' AND GuardianPassword = '" + password + "'" +
+                          " AND LoginActive = '1' and sc.IsActive = 1 and GETDATE()<= SubscriptionExpireDate" +
+                          " and sess.IsActive = '1'";
+                //query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianPhone='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
 
             }
             SqlCommand com = new SqlCommand(query, connection);
@@ -262,6 +293,9 @@ namespace ChalkboardAPI.Services
                 studentProfileView.SchoolId = reader["SchoolId"].ToString();
                 studentProfileView.SchoolName = reader["SchoolName"].ToString();
                 studentProfileView.LoginActive = Convert.ToInt32(reader["LoginActive"]);
+                studentProfileView.ClassId = reader["ClassId"].ToString();
+
+
                 //studentProfileView.Token = reader["Token"].ToString();
             }
             reader.Close();
@@ -565,12 +599,12 @@ namespace ChalkboardAPI.Services
             // generate token that is valid for 365 days
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new[] { new Claim("StudentId", user.StudentId.ToString()) }),
-                Expires = DateTime.UtcNow.AddDays(365),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
+            var tokenDescriptor = new SecurityTokenDescriptor();
+
+            tokenDescriptor.Subject = new ClaimsIdentity(new[] { new Claim("StudentId", user.StudentId.ToString()) });
+            tokenDescriptor.Expires = DateTime.UtcNow.AddDays(365);
+            tokenDescriptor.SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature);
+            
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);

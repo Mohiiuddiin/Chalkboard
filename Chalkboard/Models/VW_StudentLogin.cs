@@ -15,6 +15,7 @@ namespace ESCHOOL.Models
         //public string GuardianEmailOrPhone { get; set; }
         public string GuardianPassword { get; set; }
         public string DeviceId { get; set; }
+        public string ClassId  { get; set; }
         public string GuardianDeviceId { get; set; }
         public string SchoolId { get; set; }
         public string SchoolName { get; set; }

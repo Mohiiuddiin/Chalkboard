@@ -12,7 +12,8 @@ public class AuthorizeAttribute : Attribute, IAuthorizationFilter
     public void OnAuthorization(AuthorizationFilterContext context)
     {
       
-        {
+        {          
+
             var user = (VW_StudentLogin)context.HttpContext.Items["VW_StudentLogin"];
             if (user == null)
             {

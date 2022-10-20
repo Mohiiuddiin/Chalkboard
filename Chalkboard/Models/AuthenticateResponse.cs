@@ -15,6 +15,7 @@ namespace ChalkboardAPI.Models
         public string GuardianEmail { get; set; }
         public string GuardianPassword { get; set; }
         public string SchoolId { get; set; }
+        public string ClassId { get; set; }
         public string SchoolName { get; set; }
         public string Token { get; set; }
 
@@ -49,6 +50,8 @@ namespace ChalkboardAPI.Models
             Password = user.Password;
             SchoolId = user.SchoolId;
             SchoolName = user.SchoolName;
+            ClassId = user.ClassId;
+
             Token = token;
             if (user != null && !string.IsNullOrWhiteSpace(user.GuardianEmail) && !string.IsNullOrWhiteSpace(user.GuardianPassword))
             {
