@@ -80,7 +80,7 @@ namespace ESCHOOL.Controllers
 
         [Authorize]
         [HttpGet("GetStudentAttendance")]
-        public IActionResult GetStudentAttendance(int stdId,DateTime? fromDate,DateTime? toDate)
+        public IActionResult GetStudentAttendance(int stdId,DateTime? fromDate,DateTime? toDate,int year,int month)
         {
             try
             {
@@ -89,10 +89,10 @@ namespace ESCHOOL.Controllers
                     return Ok("STUDENT ID REQUIRED");
                 }
                 else
-                {
+                {                    
                     //if (fromDate!=null && toDate!=null)
                     //{
-                        var data = _stdAttendanceServices.GetAttendanceByStdId(stdId,fromDate,toDate);
+                        var data = _stdAttendanceServices.GetAttendanceByStdId(stdId,fromDate,toDate,year,month);
                         return Ok(data);
                     //}
                     //else

@@ -24,7 +24,7 @@ namespace ESCHOOL.Services
         IEnumerable<StdAttendance> GetAll();
         List<StdAttendance> GetById(int id);
         int InsertAttendance(StdAttendance attendance);
-        List<StdAttendanceVM> GetAttendanceByStdId(int StdId, DateTime? fromDate, DateTime? toDate);
+        StdAttendanceVM GetAttendanceByStdId(int StdId, DateTime? fromDate, DateTime? toDate,int year, int month);
     }
     public class StdAttendanceServices : IStdAttendanceServices
     {
@@ -182,11 +182,12 @@ namespace ESCHOOL.Services
             return studentProfileViews;
             //return _students;
         }
-        public List<StdAttendanceVM> GetAttendanceByStdId(int StdId, DateTime? fromDate, DateTime? toDate)
+        public StdAttendanceVM GetAttendanceByStdId(int StdId, DateTime? fromDate, DateTime? toDate,int year,int month)
         {
             try
             {
-                List<StdAttendanceVM> stdAttendances = new List<StdAttendanceVM>();
+                StdAttendanceVM stdAttendances = new StdAttendanceVM();
+                
                 string connectionString = _configuration.GetConnectionString("StudentDB");
 
                 using (var connection = new SqlConnection(connectionString))
@@ -194,7 +195,7 @@ namespace ESCHOOL.Services
                     connection.Open();
                     if (fromDate != null && toDate != null)
                     {
-                        stdAttendances = connection.Query<StdAttendanceVM>
+                        stdAttendances.AttendancesData = connection.Query<AttendanceData>
                         (@"SELECT att.StdId,std.StudentNameE StdName,s.SchoolName,sc.SectionName,c.ClassName,cast(att.StdAttDate as date)StdAttDate,StdStatus Status,DATENAME(month,StdAttDate) Month
                           FROM[ESCHOOL].[dbo].[StdAttendance] att
                           inner join Students std on std.StudentID = att.StdId
@@ -205,26 +206,42 @@ namespace ESCHOOL.Services
                     }
                     else
                     {
-                        stdAttendances = connection.Query<StdAttendanceVM>
-                        (@"SELECT att.StdId,std.StudentNameE StdName,s.SchoolName,sc.SectionName,c.ClassName,cast(att.StdAttDate as date)StdAttDate,StdStatus Status,DATENAME(month,StdAttDate) Month
-                          FROM[ESCHOOL].[dbo].[StdAttendance] att
-                          inner join Students std on std.StudentID = att.StdId
-                          inner join Classes c on att.StdAttClassId = c.ClassId
-                          inner join SubscriberSchools s on s.SchoolId = att.SchoolId
-                          inner join Sections sc on sc.SectionId = att.StdAttSectionId
-                          where month(att.StdAttDate) = month(GETDATE()) and att.StdId=" + StdId).ToList();
+                        if (month!=0 && year!=0)
+                        {
+                            stdAttendances.AttendancesData = connection.Query<AttendanceData>
+                            (@"SELECT att.StdId,std.StudentNameE StdName,s.SchoolName,sc.SectionName,c.ClassName,cast(att.StdAttDate as date)StdAttDate,StdStatus Status,DATENAME(month,StdAttDate) Month
+                              FROM[ESCHOOL].[dbo].[StdAttendance] att
+                              inner join Students std on std.StudentID = att.StdId
+                              inner join Classes c on att.StdAttClassId = c.ClassId
+                              inner join SubscriberSchools s on s.SchoolId = att.SchoolId
+                              inner join Sections sc on sc.SectionId = att.StdAttSectionId
+                              where month(att.StdAttDate) = " + month + "  and year(att.StdAttDate) = " + year + " and att.StdId=" + StdId).ToList();
+                        }                        
                     }
                     connection.Close();
+
+                    stdAttendances.AttendanceRatio = new AttendanceRatio();
+                    if (stdAttendances.AttendancesData != null)
+                    {
+                        int daysOnMonth = DateTime.DaysInMonth(year, month);
+
+                        int h, p, a;
+
+                        p = stdAttendances.AttendancesData.Where(x => x.Status == "P").Count();
+                        a = stdAttendances.AttendancesData.Where(x => x.Status == "A").Count();
+                        //h = 100 - (stdAttendances.AttendanceRatio.Present + stdAttendances.AttendanceRatio.Absent);
+
+                        stdAttendances.AttendanceRatio.Present = (p * 100)/daysOnMonth;
+                        stdAttendances.AttendanceRatio.Absent = (a * 100) / daysOnMonth;
+                        stdAttendances.AttendanceRatio.Holiday = 100 - (stdAttendances.AttendanceRatio.Present + stdAttendances.AttendanceRatio.Absent);
+                    }
                     return stdAttendances;
                 }
             }
             catch (Exception)
             {
                 throw;
-            }
-            
-
-            
+            }        
         }
 
         public List<StdAttendance> GetById(int id)
