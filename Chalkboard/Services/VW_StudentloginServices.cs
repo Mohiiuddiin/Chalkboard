@@ -22,6 +22,7 @@ namespace ChalkboardAPI.Services
         AuthenticateResponse Authenticate(AuthenticateRequest model);
         AuthenticateResponse GuardianAuthenticate(AuthenticateRequest model);
         Task<bool> UpdateDeviceId(VW_StudentLogin entity);//Update API
+        Task<bool> UpdateBearerTokenOnDB(string token, DateTime? tokenExp, int stdId);
         Task<bool> RemoveStdDeviceId(VW_StudentLogin entity);//Remove DeviceID Update API
         Task<bool> UpdateGuardianDeviceId(VW_StudentLogin entity);//Update API
         Task<bool> RemoveGuardianDeviceId(VW_StudentLogin entity);//Remove DeviceID Update API
@@ -58,7 +59,17 @@ namespace ChalkboardAPI.Services
                 return null;
 
             // authentication successful so generate jwt token
-            var token = generateJwtToken(user);
+            var token = "";
+
+            if (user.BearerToken != null && DateTime.Now<=user.BearerTokenExp)
+            {
+                token = user.BearerToken;                
+            }
+            else
+            {
+                token = generateJwtToken(user);
+                _ = UpdateBearerTokenOnDB(token, DateTime.Now.AddDays(365), user.StudentId);
+            }
             return new AuthenticateResponse(user, token);
         }
         public int InsertLoginHistory(LoginHistory loginHistory)
@@ -203,7 +214,7 @@ namespace ChalkboardAPI.Services
                 //query = "Select * FROM VW_StudentLogin WHERE Email='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
                 query = "SELECT dbo.Students.Email, dbo.Students.Password, dbo.Students.StudentID, dbo.Students.SchoolId, "+
                         "dbo.SubscriberSchools.SchoolName, dbo.Students.IsActive, dbo.Students.LoginActive, dbo.Students.SessionMasterID, "+
-                        "dbo.Students.SessionDetailsID,dbo.Students.ClassId " +
+                        "dbo.Students.SessionDetailsID,dbo.Students.ClassId,Students.BearerToken,Students.BearerTokenExp " +
                         "FROM  dbo.Students "+
                         "INNER JOIN dbo.SubscriberSchools ON dbo.Students.SchoolId = dbo.SubscriberSchools.SchoolId " +
                         "inner join dbo.SessionMaster on SessionMaster.SessionID = Students.SessionMasterID " +
@@ -217,7 +228,7 @@ namespace ChalkboardAPI.Services
                 //query = "Select * FROM VW_StudentLogin WHERE PhoneMobile='" + email + "' AND Password='" + password + "' AND LoginActive='1'";
                 query = "SELECT dbo.Students.Email, dbo.Students.Password, dbo.Students.StudentID, dbo.Students.SchoolId, " +
                         "dbo.SubscriberSchools.SchoolName, dbo.Students.IsActive, dbo.Students.LoginActive, dbo.Students.SessionMasterID, " +
-                        "dbo.Students.SessionDetailsID,dbo.Students.ClassId " +
+                        "dbo.Students.SessionDetailsID,dbo.Students.ClassId,Students.BearerToken,Students.BearerTokenExp " +
                         "FROM  dbo.Students " +
                         "INNER JOIN dbo.SubscriberSchools ON dbo.Students.SchoolId = dbo.SubscriberSchools.SchoolId " +
                         "inner join dbo.SessionMaster on SessionMaster.SessionID = Students.SessionMasterID " +
@@ -236,8 +247,16 @@ namespace ChalkboardAPI.Services
                 studentProfileView.Password = reader["Password"].ToString();
                 studentProfileView.SchoolId = reader["SchoolId"].ToString();
                 studentProfileView.SchoolName = reader["SchoolName"].ToString();
-                studentProfileView.LoginActive = Convert.ToInt32(reader["LoginActive"]);
+                studentProfileView.LoginActive = Convert.ToInt32(reader["LoginActive"]);                
                 studentProfileView.ClassId = reader["ClassId"].ToString();
+                studentProfileView.BearerToken = reader["BearerToken"].ToString();
+                if (!string.IsNullOrEmpty(studentProfileView.BearerToken))
+                {
+                    studentProfileView.BearerTokenExp = Convert.ToDateTime(reader["BearerTokenExp"]);
+                }
+                
+
+                
                 //studentProfileView.Token = reader["Token"].ToString();
             }
             reader.Close();
@@ -261,7 +280,7 @@ namespace ChalkboardAPI.Services
             SqlConnection connection = new SqlConnection(connectionString);
             string query = "";
             if (email.Contains('@'))
-            {                
+            {   
                 //query = "Select * FROM Students S INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId WHERE GuardianEmail='" + email + "' AND GuardianPassword='" + password + "' AND LoginActive='1'";
                 query = "Select * FROM Students S  INNER JOIN SubscriberSchools Sc ON S.SchoolId = Sc.SchoolId"+
                           " inner join SessionMaster sess on sess.SessionID = s.SessionMasterID"+
@@ -294,8 +313,6 @@ namespace ChalkboardAPI.Services
                 studentProfileView.SchoolName = reader["SchoolName"].ToString();
                 studentProfileView.LoginActive = Convert.ToInt32(reader["LoginActive"]);
                 studentProfileView.ClassId = reader["ClassId"].ToString();
-
-
                 //studentProfileView.Token = reader["Token"].ToString();
             }
             reader.Close();
@@ -358,6 +375,61 @@ namespace ChalkboardAPI.Services
             //return _studentlogin.FirstOrDefault(x => x.StudentloginId == StudentloginId);
         }
 
+        public async Task<bool> UpdateBearerTokenOnDB(string token, DateTime? tokenExp,int stdId)
+        {
+            string erroMsg = string.Empty;
+            int rowCount = 0;
+            string connectionString = _configuration.GetConnectionString("StudentDB");
+
+            await using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    string query = "";
+                    if (token!=null)
+                    {
+                        query = "UPDATE [dbo].[Students] SET BearerToken= @BearerToken,BearerTokenExp=@BearerTokenExp WHERE StudentID=@StudentID";
+                    }
+                    
+
+                    SqlCommand cmd = new SqlCommand(query, con)
+                    {
+                        CommandType = CommandType.Text,
+                    };
+
+                    cmd.Parameters.AddWithValue("@BearerToken", token);
+                    cmd.Parameters.AddWithValue("@BearerTokenExp", tokenExp);
+                    cmd.Parameters.AddWithValue("@StudentID", stdId);
+
+                    con.Open();
+                    rowCount = cmd.ExecuteNonQuery();
+
+                    con.Close();
+                    cmd.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    erroMsg = ex.ToString();
+                }
+                finally
+                {
+                    if (con != null && con.State == ConnectionState.Open)
+                    {
+                        con.Close();
+                        con.Dispose();
+                    }
+                }
+            }
+
+            if (rowCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         public async Task<bool> UpdateDeviceId(VW_StudentLogin entity)
         {

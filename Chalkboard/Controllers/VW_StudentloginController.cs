@@ -45,8 +45,7 @@ namespace ChalkboardAPI.Controllers
             catch (Exception)
             {
                 throw;
-            }
-            
+            }            
         }
 
         [Authorize]

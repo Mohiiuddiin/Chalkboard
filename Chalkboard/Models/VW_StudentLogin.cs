@@ -20,6 +20,8 @@ namespace ESCHOOL.Models
         public string SchoolId { get; set; }
         public string SchoolName { get; set; }
         public int LoginActive { get; set; }
+        public string BearerToken { get; set; }
+        public DateTime? BearerTokenExp { get; set; }
         
     }
 }
