@@ -271,93 +271,96 @@ namespace ESCHOOL.Services
                 MainSubject.Results = new List<Results>();
                 foreach (var item in examlists)
                 {
-                    //
-                    List<Results> Subject = new List<Results>();
-                    //Results s = new Results();
-                    //exam.Subjects = new List<Subjects>();
-                    x1 = vm.Where(x => (x.ExamSetupID == item.ExamSetupID && x.SubjectId == item.SubjectId)).ToList();
-                    //exam.Subjects = new Subjects();
-
-                    //exam.Subjects.Results = new List<Results>();
-                    Results subject1 = new Results();
-                    subject1.SubjectId = item.SubjectId;
-                    subject1.SubjectName = item.SubjectName;
-                    subject1.TestDetails = new List<TestDetails>();
-                    foreach (var item1 in x1)
+                    if (exam.ExamType==item.ExamType)
                     {
-                        int count = 0;
-                        if (item1.Stat == "Exam")
-                        {
-                            subject1.ExamDetails = new Chalkboard.Models.CustomModels.ExamDetails()
-                            {
-                                ClassID = item1.ClassId,
-                                SubjectId = item1.SubjectId,
-                                ExamDetailId = item1.ExamDetailId,
-                                ExamDate = item1.Date,
-                                ExamEnd = item1.ExamEnd,
-                                ExamStart = item1.ExamStart,
-                                ExamSyllabus = item1.ExamSyllabus,
-                                ExamTitle = item1.ExamTitle,
-                                ExamTypeId = item1.ExamTypeId,
-                                ExamVenue = item1.ExamVenue,
-                                FullMarks = item1.FullMarks,
-                                GetMarks = item1.GetMarks,
-                                IsActive = item1.IsActive,
-                                Marks = item1.Marks,
-                                SchoolId = item1.SchoolId,
-                                SectionID = item1.SectionId,
-                                Remarks = item1.Remarks
-                                
-                            };
-                            count++;
-                        }
-                        else if (item1.Stat == "Test")
-                        {
-                            //subjects.SubjectId = item1.SubjectId;
-                            //subjects.SubjectName = item1.SubjectName;
-                            //exam.ExamSetupID = item.ExamSetupID;
-                            //exam.ExamType = item.ExamType;
-                            //exam.Subjects = new List<Subjects>();
-                            //foreach (var item1 in x1)
-                            //{
+                        List<Results> Subject = new List<Results>();
+                        //Results s = new Results();
+                        //exam.Subjects = new List<Subjects>();
+                        x1 = vm.Where(x => (x.ExamSetupID == item.ExamSetupID && x.SubjectId == item.SubjectId)).ToList();
+                        //exam.Subjects = new Subjects();
 
-                            //    //exam.Subjects.Add(subjects);
-                            //}
-                            subject1.TestDetails.Add(new Chalkboard.Models.CustomModels.TestDetails()
+                        //exam.Subjects.Results = new List<Results>();
+                        Results subject1 = new Results();
+                        subject1.SubjectId = item.SubjectId;
+                        subject1.SubjectName = item.SubjectName;
+                        subject1.TestDetails = new List<TestDetails>();
+                        foreach (var item1 in x1)
+                        {
+                            int count = 0;
+                            if (item1.Stat == "Exam")
                             {
-                                TaskId = item1.TaskId,
-                                SubjectId = item1.SubjectId,
-                                SectionId = item1.SectionId,
-                                SubjectName = item1.SubjectName,
-                                TaskDetails = item1.TaskDetails,
-                                TaskTypeName = item1.TaskTypeName,
-                                TeacherName = item1.TeacherName,
-                                TestExamResults = new Chalkboard.Models.CustomModels.TestExamResults()
+                                subject1.ExamDetails = new Chalkboard.Models.CustomModels.ExamDetails()
                                 {
-                                    ExamSession = item1.ExamSession,
+                                    ClassID = item1.ClassId,
+                                    SubjectId = item1.SubjectId,
+                                    ExamDetailId = item1.ExamDetailId,
+                                    ExamDate = item1.Date,
+                                    ExamEnd = item1.ExamEnd,
+                                    ExamStart = item1.ExamStart,
+                                    ExamSyllabus = item1.ExamSyllabus,
+                                    ExamTitle = item1.ExamTitle,
+                                    ExamTypeId = item1.ExamTypeId,
+                                    ExamVenue = item1.ExamVenue,
                                     FullMarks = item1.FullMarks,
                                     GetMarks = item1.GetMarks,
-                                    GPA = item1.GPA,
-                                    Remarks = item1.Remarks,
-                                    ResultDate = item1.ResultDate,
-                                    StudentId = item1.StudentId,
-                                    TaskNumber = item1.TaskNumber,
-                                    TestExamResultId = item1.TestExamResultId,
-                                    TestExamResultPublished = item1.TestExamResultPublished,
-                                }
+                                    IsActive = item1.IsActive,
+                                    Marks = item1.Marks,
+                                    SchoolId = item1.SchoolId,
+                                    SectionID = item1.SectionId,
+                                    Remarks = item1.Remarks
 
-                            });
-                            count++;
+                                };
+                                count++;
+                            }
+                            else if (item1.Stat == "Test")
+                            {
+                                //subjects.SubjectId = item1.SubjectId;
+                                //subjects.SubjectName = item1.SubjectName;
+                                //exam.ExamSetupID = item.ExamSetupID;
+                                //exam.ExamType = item.ExamType;
+                                //exam.Subjects = new List<Subjects>();
+                                //foreach (var item1 in x1)
+                                //{
+
+                                //    //exam.Subjects.Add(subjects);
+                                //}
+                                subject1.TestDetails.Add(new Chalkboard.Models.CustomModels.TestDetails()
+                                {
+                                    TaskId = item1.TaskId,
+                                    SubjectId = item1.SubjectId,
+                                    SectionId = item1.SectionId,
+                                    SubjectName = item1.SubjectName,
+                                    TaskDetails = item1.TaskDetails,
+                                    TaskTypeName = item1.TaskTypeName,
+                                    TeacherName = item1.TeacherName,
+                                    TestExamResults = new Chalkboard.Models.CustomModels.TestExamResults()
+                                    {
+                                        ExamSession = item1.ExamSession,
+                                        FullMarks = item1.FullMarks,
+                                        GetMarks = item1.GetMarks,
+                                        GPA = item1.GPA,
+                                        Remarks = item1.Remarks,
+                                        ResultDate = item1.ResultDate,
+                                        StudentId = item1.StudentId,
+                                        TaskNumber = item1.TaskNumber,
+                                        TestExamResultId = item1.TestExamResultId,
+                                        TestExamResultPublished = item1.TestExamResultPublished,
+                                    }
+
+                                });
+                                count++;
+                            }
+
                         }
 
+                        Subject.Add(subject1);
+
+                        //Subject.Add(subject1);
+                        //
+                        MainSubject.Results.Add(subject1);
                     }
-
-                    Subject.Add(subject1);
-
-                    //Subject.Add(subject1);
                     //
-                    MainSubject.Results.Add(subject1);
-
+                    
                 }
                 exam.Subjects.Results = MainSubject.Results;
 
@@ -367,7 +370,7 @@ namespace ESCHOOL.Services
                  " left join ExamDetails e on e.SubjectId=s.SubjecId "+
                  " left join Task t on t.SubjectName=s.SubjectName"+
                   " where s.SchoolId = " + vm[0].SchoolId + " and s.ClassId =" + vm[0].ClassId +
-                ") as ex where ex.status1 is null and ex.status2 is null";
+                ") as ex where ex.status1 is not null and ex.status2 is null";
                 //              query = @"SELECT SubjecId,SubjectName
                 //FROM[ESCHOOL].[dbo].[Subjects] where SchoolId = "+vm[0].SchoolId+" and ClassId = 2110" + vm[0].ClassId;
                 SqlCommand com1 = new SqlCommand(query, connection);
